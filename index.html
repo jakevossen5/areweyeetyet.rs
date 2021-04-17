@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <h1>Are we Yeet Yet? No</h1>
+    <h1>Are We Yeet Yet? No</h1>
 
     <h2>What is this page</h2>
 
@@ -17,14 +17,32 @@
     <h2>Timeline</h2>
 
     <ul>
+        <li>2021-04-17: A <a href="https://github.com/rust-lang/rfcs/blob/master/text/3058-try-trait-v2.md#summary">RFC</a> was merged that uses the <code>yeet</code> syntax</li> to avoid weighing in on other keyword options
+        <li>2021-03-07: Internal <a href="https://internals.rust-lang.org/t/syntax-for-returning-early-with-an-error/14181">form discussion</a> around returning errors early</li>
+        <li>2021-02-11: A <a href="https://twitter.com/yaahc_/status/1359886855013994501?s=19">Twitter discussion/poll</a> was created about reserving <code>yeet</code></li>
         <li>2020-04-10: The language team <a href="https://blog.rust-lang.org/inside-rust/2020/04/10/lang-team-design-meetings.html">discussed</a> adding <code>yeet</code> as a reserved keyword</li>
+        <li>2020-04-09: A <a href="https://yaah.dev/try-blocks">blog post</a> suggests using the <code>yeet</code> keyword early returning errors</li>
+        <li>2014-09-16: The syntatic idea around this type of syntatic sugar is introduced in <a href="https://github.com/rust-lang/rfcs/blob/master/text/0243-trait-based-exception-handling.md#throw-and-throws">this RFC</a></li>
     </ul>
+
+    <h2>What does <code>yeet</code> solve?</h2>
+
+    <p>Rust error handling can be verbose and clunky sometimes. There is <a href="https://github.com/rust-lang/project-error-handling">a whole team</a> dedicated to making it better.
+        One of the goals is to make it easier to propagate errors, so the idea is to add syntactic sugar for <code>return Err(e)</code>.
+        This could be <code>throw e</code>, <code>fail e</code>, <code>bail e</code> or any other number of keywords.
+        However, I believe that <code>yeet</code> is honestly one of the better options here.
+        I could talk about how <code>throw</code> exists in other languages, <code>bail</code> is already used in many crates, but fundamentally, languages can be whatever we want them to be.
+        Words are not off limits just because they are slang, it is okay to have fun, and as a community we can come together and say yes to <code>yeet</code>.
+        <br>
+        <a href="https://rust-lang.zulipchat.com/#narrow/stream/122651-general/topic/are.20we.20yeet.20yet.3F/near/235007572">Eh2406's Zulip message</a> points out that at some point, "Ok" was considered slang for "okay", but we have <code>Ok(T)</code>.
+    </p>
 
     <footer>
         <h5>Credits</h5>
         <p>Idea from <a href="https://twitter.com/EllenNyan0214">Boxy</a></p>
         <p>Special thanks to <a href="https://twitter.com/yaahc_">Jane Lusby</a> who has pioneered the bleeding edge of Rust error handling</p>
-        <p>This page created by <a href="https://twitter.com/jakevossen5">Jake Vossen</a></p>
+        <p>Thanks to everyone in <a href="https://rust-lang.zulipchat.com/#narrow/stream/122651-general/topic/are.20we.20yeet.20yet.3F/near/234884337">this Zulip Thread</a> for helping me track down the history of <code>yeet</code> and providing useful feedback and advice.</p>
+        <p>This page created by <a href="https://twitter.com/jakevossen5">Jake Vossen</a>. If you find errors or want to make an improvement, feel free to open a pull request on <a href="https://github.com/jakevossen5/areweyeetyet.rs">this</a> GitHub repository, or you can find my contact information on <a href="https://jake.vossen.dev">my website</a>.</p>
 
     </footer>
 </body>
